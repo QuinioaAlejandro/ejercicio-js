@@ -28,26 +28,26 @@ let Marca = prompt("Elegí una marca?");
 
 switch (Marca) {
   case "Nike":
-    console.log("elegiste el color" + Marca);
+    console.log("elegiste el marca" + Marca);
     break;
   case "puma":
-    console.log("elegiste el color " + Marca);
+    console.log("elegiste el marca " + Marca);
     break;
     case "Asics":
-      console.log("elegiste el color " + Marca);
+      console.log("elegiste el marca " + Marca);
     break;
     case "New Balance":
-      console.log("elegiste el color " + Marca);
+      console.log("elegiste el marca " + Marca);
     break;
    
     case "le cost sportif":
-      console.log("elegiste el color " + Marca);
+      console.log("elegiste el marca " + Marca);
     break;
     case "sergio tacchini":
-      console.log("elegiste el color " + Marca);
+      console.log("elegiste el marca " + Marca);
     break;
     case "Vans":
-      console.log("elegiste el color " + Marca);
+      console.log("elegiste el marca " + Marca);
     break;
   default:
     if (Marca="") {
@@ -61,16 +61,6 @@ switch (Marca) {
 let carrito = 0;
 let agregar = Number(prompt("¿Cuántos quiere agregar al carrito?"));
 
-
-for(let i=0; i<1; i++) {
-  mensaje = prompt("Ingrese un mensaje para la tarjeta del ramo.");
-  if (mensaje=="") {
-    console.log("usted no ha ingresado ningún mensaje.")
-  } else{
-    console.log("ingresaste un mensaje existosamente.");
-  }
-  
-}
 
 // FUNCION
 
