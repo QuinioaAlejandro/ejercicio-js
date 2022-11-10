@@ -1,3 +1,49 @@
+// OBJETOS Y ARRAYS //
+
+class Zapatillas{
+constructor(precio, marca, modelo, genero){
+this.precio = precio;
+this.marca = marca;
+this.modelo = modelo;
+this.genero = genero;
+}
+SumaIva() {
+  this.precio + this.precio * 1.21;
+  console.log(this.precio);
+}
+}
+
+const productos = [];
+
+productos.push (new Zapatillas(32000, "nike", "deportiva", "hombre"));
+productos.push (new Zapatillas(20000, "le cost sportif", "urbano", "mujer"));
+productos.push (new Zapatillas(30800, "sergio tacchini", "deportiva", "hombre"));
+productos.push (new Zapatillas(39600, "puma", "deportiva", "mujer"));
+
+
+for (const Zapatillas of productos){
+Zapatillas.SumaIva();
+}
+
+const femenina = productos.filter((el) => el.genero.includes("mujer"));
+const barata = productos.filter((el) => el.precio < 30000)
+const masculino = productos.filter((el) => el.genero.includes("hombre"));
+
+console.log(femenina);
+console.log(barata);
+console.log(masculino);
+
+const busqueda = productos.find((el) => el.marca === "puma");
+console.log(busqueda);
+
+
+const precios = precios.map((el) => el.precios)
+const sumaPrecios = precios.reduce((a, b) => + a + b, 0)
+console.log(sumaPrecios);
+
+let cantidad = productos.length;
+console.log(cantidad);
+
 // CONDICIONALES
 
 let color = prompt("Elegí un color");
